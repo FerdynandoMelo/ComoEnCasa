@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +8,17 @@ import { Component } from '@angular/core';
   standalone: false,
 })
 export class AppComponent {
-  constructor() {}
+  public appPages = [
+    { title: 'Inicio', url: '/inicio', icon: 'home' },
+    { title: 'Platos', url: '/platos', icon: 'restaurant' },
+    { title: 'Sobre Nosotros', url: '/sobre-nosotros', icon: 'information-circle' },
+    { title: 'Contacto', url: '/contacto', icon: 'call' },
+    { title: 'Cerrar Sesión', url: '/login', icon: 'log-out' }
+  ];
+
+  constructor(private router: Router) {}
+
+  isLoginPage(): boolean {
+    return this.router.url === '/login';
+  }
 }

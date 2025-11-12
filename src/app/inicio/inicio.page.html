@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding fade-in" [style.backgroundImage]="'url(assets/img/fondo2.jpg)'">
+  <div class="inicio-container">
+    <!-- Logo arriba -->
+    <img src="assets/img/logo.png" alt="Logo ComoEnCasa" class="logo-img" />
+
+    <h2>Bienvenido a ComoEnCasa</h2>
+    <p>
+      Un restaurante familiar con tradición desde 1988. Descubre nuestros platos y conoce nuestra historia.
+    </p>
+
+    <ion-button expand="block" routerLink="/platos">Ver Platos</ion-button>
+    <ion-button expand="block" routerLink="/sobre-nosotros">Sobre Nosotros</ion-button>
+    <ion-button expand="block" routerLink="/contacto">Contacto</ion-button>
+  </div>
+</ion-content>

@@ -1,0 +1,44 @@
+ion-content {
+  --background-size: cover;
+  --background-position: center;
+  animation: fadeIn 1.2s ease-in-out;
+  color: #f4f4f4;
+}
+
+.nosotros-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.nosotros-img {
+  width: 140px;
+  margin: 0 auto 24px;
+  opacity: 0.95;
+  display: block;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #f4f4f4;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: #e0e0e0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

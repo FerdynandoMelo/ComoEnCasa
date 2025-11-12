@@ -1,0 +1,91 @@
+ion-content {
+  --background-size: cover;
+  --background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.fondo-general {
+  background: url('/assets/img/fondo-general.jpg') no-repeat center center / cover !important;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+.login-icon {
+  width: 150px;
+  margin: 24px auto 12px;
+  opacity: 0.85;
+}
+
+ion-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(4px);
+}
+
+ion-card-title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+ion-button {
+  margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.custom-alert {
+  --background: #2c2c2c;
+  --color: #f4f4f4;
+  --border-radius: 12px;
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.alert-button {
+  color: #3880ff;
+}
+
+.login-content, .registro-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.login-container, .registro-container {
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.registro-link {
+  margin-top: 16px;
+  text-align: center;
+
+  p {
+    margin-bottom: 4px;
+    color: #ffffff;
+    font-size: 0.95rem;
+  }
+
+  ion-button {
+    font-weight: bold;
+    color: #b0c4de;
+  }
+}
