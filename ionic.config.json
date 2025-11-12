@@ -1,0 +1,7 @@
+{
+  "name": "ComoEnCasa",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
